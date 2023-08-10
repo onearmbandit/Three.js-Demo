@@ -1,0 +1,61 @@
+:root {
+	font-size: 100%;
+}
+
+body {
+	font-display: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	color: var(--color-text);
+	font-size: 18px;
+	@include Font-Regular;
+	@include mq('t-768', 'max') {
+		font-size: 14px;
+		line-height: 1.28;
+	}
+	&.modal-open{
+		overflow: hidden;
+	}
+	.common-page {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		header {
+
+		}
+		main {
+			flex: 1;
+		}
+		footer {
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+
+	&:focus,
+	&:hover,
+	&:active {
+		outline: none;
+	}
+}
+img {
+	.max-100 {
+		max-width: 100%;
+	}
+	.w-100 {
+		width: 100%;
+	}
+}
+
+.p-relative {
+	position: relative;
+}
+
+input {
+	touch-action: manipulation;
+}

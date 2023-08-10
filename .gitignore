@@ -1,0 +1,45 @@
+# Uploads directory
+/uploads/
+
+# Leftover core/plugin upgrade files
+/upgrade/
+
+# mu-plugins; these are managed at the platform-level
+/mu-plugins/
+
+# drop-ins; these are managed at the platform-level
+/object-cache.php
+/db.php
+
+# Ignore temporary OS files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local PHPCS configuration files
+.phpcs.xml
+phpcs.xml
+
+# Composer (repo root only)
+/vendor/
+
+package-lock.json
+
+node_modules/
+vendor/
+wp/*
+sniffs/*
+test.php
+photon_local/*
+yarn-error.log
+*.lock
+
+themes/xount/dist/*
+
+!plugins/*/vendor
+!plugins/**/vendor
+
+db_dump/

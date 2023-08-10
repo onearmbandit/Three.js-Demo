@@ -1,0 +1,37 @@
+.common-banner{
+	padding-top: 100px;
+	padding-bottom: 101px;
+	display: flex;
+	align-items: flex-end;
+	background-size: cover;
+	min-height: 406px;
+	@include mq('t-992', 'max') {
+		padding-bottom: 48px;
+	}
+	.conatiner-common{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		z-index: 1;
+		@include mq('t-768', 'max') {
+			flex-direction: column;
+		}
+		h1{
+			max-width: 62.5%;
+			text-transform: capitalize;
+			@include mq('t-992', 'max') {
+				max-width: 100%;
+			}
+		}
+	}
+	.overlay{
+		// background-color: rgba(238, 238, 238, 0.76);
+		background: linear-gradient(180deg, rgba(238, 238, 238, 0.76) 0%, rgba(255, 255, 255, 0.64) 100%);
+		position: absolute;
+		left: auto;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+}

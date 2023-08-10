@@ -1,0 +1,11 @@
+.conatiner-common{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media(min-width: 1440px){
+		max-width: 1310px;
+	}
+	@include mq('t-992', 'max') {
+		padding: 0 24px;
+	}
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap');
+
+@mixin font-face($font-weight, $font-style) {
+  font-family: 'Archivo', sans-serif;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+@mixin Font-Light {
+  @include font-face(300, normal);
+}
+@mixin Font-Regular {
+  @include font-face(400, normal);
+}
+@mixin Font-Medium {
+  @include font-face(500, normal);
+}
+
+body {
+  @include Font-Regular;
+}

@@ -1,0 +1,63 @@
+.fiter-search-wrapper{
+	margin: 24px 0 56px;
+	@include mq('t-992', 'max') {
+		flex-direction: column;
+		margin: 26px 0 24px;
+	}
+	.filters{
+		flex: 1;
+		@include mq('t-992', 'max') {
+			margin-bottom: 30px;
+		}
+	}
+	.search-wrapper{
+		flex: 1;
+		display: flex;
+		display: flex;
+    justify-content: flex-end;
+
+		> div{
+			position: relative;
+			max-width: 400px;
+			min-width: 400px;
+			min-height: 40px;
+			display: flex;
+			align-items: flex-start;
+			border-bottom: 1px solid var(--bg-gray);
+			@include mq('t-992', 'max') {
+				min-width: initial;
+				max-width: initial;
+				width: 100%;
+			}
+			@include mq('t-768', 'max') {
+				min-height: 24px;
+			}
+		}
+		.input{
+			font-size: 14px;
+			line-height: 1.14;
+			// padding: 0px 24px;
+			width: 100%;
+			border: none;
+			border-radius: 0;
+			background-color: transparent;
+			@include mq('t-768', 'max') {
+				font-size: 12px;
+				line-height: 1;
+			}
+			&:focus{
+				outline: none;
+			}
+			 @include input-placeholder{
+				text-transform: uppercase;
+			}
+		}
+		img{
+			position: absolute;
+			right: 0;
+			@include mq('t-768', 'max') {
+				width: 14px;
+			}
+		}
+	}
+}

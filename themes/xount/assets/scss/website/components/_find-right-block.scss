@@ -1,0 +1,84 @@
+.find-block {
+	margin-top: 119px;
+	margin-bottom: 122px;
+	@include mq('t-992', 'max') {
+		margin-top: 48px;
+		margin-bottom: 24px;
+	}
+	.content-header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 74px;
+		@include mq('t-992', 'max') {
+			flex-direction: column;
+			margin-bottom: 21px;
+		}
+		> div{
+			flex: 50% 0 0;
+			max-width: 50% 0 0;
+		}
+		.content {
+			padding-right: 20px;
+			p {
+				padding-right: 10px;
+				@include mq('t-992', 'max') {
+					padding-right: 0;
+					margin-bottom: 19px;
+				}
+			}
+		}
+
+		.btn-wrapper {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+			padding-left: 20px;
+			@include mq('t-992', 'max') {
+				padding-left: 0;
+				justify-content: flex-start;
+			}
+			a {}
+		}
+	}
+
+	.find-block-inner {
+		display: flex;
+		margin: 0 -20px;
+		@include mq('t-992', 'max') {
+			flex-wrap: wrap;
+		}
+
+		@include mq('t-768', 'max') {
+			flex-wrap: wrap;
+			margin: 0;
+		}
+
+		>div {
+			display: flex;
+			flex-direction: column;
+			padding: 0 20px;
+			@include mq('t-992', 'max') {
+				margin-bottom: 24px;
+			}
+			@include mq('t-768', 'max') {
+				padding: 0 0px;
+			}
+		}
+
+		.img-wrapper {
+			flex: 1;
+			border-radius: 8px;
+			overflow: hidden;
+			margin-bottom: 24px;
+			@include mq('t-992', 'max') {
+				margin-bottom: 12px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

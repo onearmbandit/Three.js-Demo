@@ -1,0 +1,48 @@
+.sec-connect-withus{
+	padding: 120px 0;
+	background-image: url('../../images/conatct-bg.jpeg');
+	background-size: cover;
+	@include mq('t-992', 'max') {
+		padding: 48px 0;
+	}
+	.conatiner-common{
+		> div{
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			@include mq('t-992', 'max') {
+				flex-direction: column;
+			}
+			.btn-primary{
+				@include mq('t-992', 'max') {
+					width: 100%;
+					justify-content: center;
+					margin-bottom: 48px;
+				}
+			}
+			.info-wrapper{
+				display: flex;
+				column-gap: 37px;
+				@include mq('t-992', 'max') {
+					width: 100%;
+					justify-content: space-between;
+				}
+				a{
+					// font-size: 14px;
+					// line-height: 1.14;
+					line-height: 1.33;
+					color: var(--color-text);
+				}
+			}
+		}
+	}
+	h1{
+		color: var(--color-white);
+		margin-bottom: 40px;
+		max-width: 60%;
+		@include mq('t-992', 'max') {
+			max-width: 100%;
+			margin-bottom: 24px;
+		}
+	}
+}
